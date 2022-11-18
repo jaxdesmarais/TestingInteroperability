@@ -7,19 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEBC6E712927FC24004E25A0 /* TestingInteroperability.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6E702927FC24004E25A0 /* TestingInteroperability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBC6E8B2927FC6C004E25A0 /* CatObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBC6E972927FC85004E25A0 /* HouseSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6E962927FC85004E25A0 /* HouseSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBC6E9C2927FCCD004E25A0 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBC6E9B2927FCCD004E25A0 /* Dog.swift */; };
+		BEBC6EBE2927FE11004E25A0 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBC6EBD2927FE11004E25A0 /* Cat.m */; };
+		BEBC6EC02927FF13004E25A0 /* Cat.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6EBF2927FF13004E25A0 /* Cat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBC6EC22927FF5B004E25A0 /* DogSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBC6E7C2927FC55004E25A0 /* DogSwift.framework */; };
+		BEBC6EC32927FF5B004E25A0 /* DogSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEBC6E7C2927FC55004E25A0 /* DogSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEBC6EC72927FF64004E25A0 /* CatObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBC6E882927FC6C004E25A0 /* CatObjC.framework */; };
+		BEBC6EC82927FF64004E25A0 /* CatObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEBC6E882927FC6C004E25A0 /* CatObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEBC6ECD292800C2004E25A0 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBC6ECC292800C2004E25A0 /* House.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BEBC6EC42927FF5B004E25A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEBC6E642927FC24004E25A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEBC6E7B2927FC55004E25A0;
+			remoteInfo = DogSwift;
+		};
+		BEBC6EC92927FF64004E25A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEBC6E642927FC24004E25A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEBC6E872927FC6C004E25A0;
+			remoteInfo = CatObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEBC6EC62927FF5B004E25A0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BEBC6EC32927FF5B004E25A0 /* DogSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6ECB2927FF64004E25A0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BEBC6EC82927FF64004E25A0 /* CatObjC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		BEBC6E6D2927FC24004E25A0 /* TestingInteroperability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestingInteroperability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEBC6E702927FC24004E25A0 /* TestingInteroperability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingInteroperability.h; sourceTree = "<group>"; };
+		BEBC6E7C2927FC55004E25A0 /* DogSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DogSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBC6E882927FC6C004E25A0 /* CatObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatObjC.h; sourceTree = "<group>"; };
+		BEBC6E942927FC85004E25A0 /* HouseSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HouseSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBC6E962927FC85004E25A0 /* HouseSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HouseSwift.h; sourceTree = "<group>"; };
+		BEBC6E9B2927FCCD004E25A0 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		BEBC6EBD2927FE11004E25A0 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		BEBC6EBF2927FF13004E25A0 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		BEBC6ECC292800C2004E25A0 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BEBC6E6A2927FC24004E25A0 /* Frameworks */ = {
+		BEBC6E792927FC55004E25A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E852927FC6C004E25A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBC6EC22927FF5B004E25A0 /* DogSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E912927FC85004E25A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBC6EC72927FF64004E25A0 /* CatObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,57 +103,144 @@
 		BEBC6E632927FC24004E25A0 = {
 			isa = PBXGroup;
 			children = (
-				BEBC6E6F2927FC24004E25A0 /* TestingInteroperability */,
+				BEBC6E7D2927FC55004E25A0 /* DogSwift */,
+				BEBC6E892927FC6C004E25A0 /* CatObjC */,
+				BEBC6E952927FC85004E25A0 /* HouseSwift */,
 				BEBC6E6E2927FC24004E25A0 /* Products */,
+				BEBC6EC12927FF5B004E25A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		BEBC6E6E2927FC24004E25A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEBC6E6D2927FC24004E25A0 /* TestingInteroperability.framework */,
+				BEBC6E7C2927FC55004E25A0 /* DogSwift.framework */,
+				BEBC6E882927FC6C004E25A0 /* CatObjC.framework */,
+				BEBC6E942927FC85004E25A0 /* HouseSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BEBC6E6F2927FC24004E25A0 /* TestingInteroperability */ = {
+		BEBC6E7D2927FC55004E25A0 /* DogSwift */ = {
 			isa = PBXGroup;
 			children = (
-				BEBC6E702927FC24004E25A0 /* TestingInteroperability.h */,
+				BEBC6E9B2927FCCD004E25A0 /* Dog.swift */,
 			);
-			path = TestingInteroperability;
+			path = DogSwift;
+			sourceTree = "<group>";
+		};
+		BEBC6E892927FC6C004E25A0 /* CatObjC */ = {
+			isa = PBXGroup;
+			children = (
+				BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */,
+				BEBC6EBD2927FE11004E25A0 /* Cat.m */,
+				BEBC6EBF2927FF13004E25A0 /* Cat.h */,
+			);
+			path = CatObjC;
+			sourceTree = "<group>";
+		};
+		BEBC6E952927FC85004E25A0 /* HouseSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BEBC6E962927FC85004E25A0 /* HouseSwift.h */,
+				BEBC6ECC292800C2004E25A0 /* House.swift */,
+			);
+			path = HouseSwift;
+			sourceTree = "<group>";
+		};
+		BEBC6EC12927FF5B004E25A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BEBC6E682927FC24004E25A0 /* Headers */ = {
+		BEBC6E772927FC55004E25A0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBC6E712927FC24004E25A0 /* TestingInteroperability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E832927FC6C004E25A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBC6E8B2927FC6C004E25A0 /* CatObjC.h in Headers */,
+				BEBC6EC02927FF13004E25A0 /* Cat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E8F2927FC85004E25A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBC6E972927FC85004E25A0 /* HouseSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BEBC6E6C2927FC24004E25A0 /* TestingInteroperability */ = {
+		BEBC6E7B2927FC55004E25A0 /* DogSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEBC6E742927FC24004E25A0 /* Build configuration list for PBXNativeTarget "TestingInteroperability" */;
+			buildConfigurationList = BEBC6E802927FC56004E25A0 /* Build configuration list for PBXNativeTarget "DogSwift" */;
 			buildPhases = (
-				BEBC6E682927FC24004E25A0 /* Headers */,
-				BEBC6E692927FC24004E25A0 /* Sources */,
-				BEBC6E6A2927FC24004E25A0 /* Frameworks */,
-				BEBC6E6B2927FC24004E25A0 /* Resources */,
+				BEBC6E772927FC55004E25A0 /* Headers */,
+				BEBC6E782927FC55004E25A0 /* Sources */,
+				BEBC6E792927FC55004E25A0 /* Frameworks */,
+				BEBC6E7A2927FC55004E25A0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TestingInteroperability;
-			productName = TestingInteroperability;
-			productReference = BEBC6E6D2927FC24004E25A0 /* TestingInteroperability.framework */;
+			name = DogSwift;
+			productName = DogSwift;
+			productReference = BEBC6E7C2927FC55004E25A0 /* DogSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEBC6E872927FC6C004E25A0 /* CatObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEBC6E8C2927FC6C004E25A0 /* Build configuration list for PBXNativeTarget "CatObjC" */;
+			buildPhases = (
+				BEBC6E832927FC6C004E25A0 /* Headers */,
+				BEBC6E842927FC6C004E25A0 /* Sources */,
+				BEBC6E852927FC6C004E25A0 /* Frameworks */,
+				BEBC6E862927FC6C004E25A0 /* Resources */,
+				BEBC6EC62927FF5B004E25A0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEBC6EC52927FF5B004E25A0 /* PBXTargetDependency */,
+			);
+			name = CatObjC;
+			productName = CatObjC;
+			productReference = BEBC6E882927FC6C004E25A0 /* CatObjC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEBC6E932927FC85004E25A0 /* HouseSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEBC6E982927FC85004E25A0 /* Build configuration list for PBXNativeTarget "HouseSwift" */;
+			buildPhases = (
+				BEBC6E8F2927FC85004E25A0 /* Headers */,
+				BEBC6E902927FC85004E25A0 /* Sources */,
+				BEBC6E912927FC85004E25A0 /* Frameworks */,
+				BEBC6E922927FC85004E25A0 /* Resources */,
+				BEBC6ECB2927FF64004E25A0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEBC6ECA2927FF64004E25A0 /* PBXTargetDependency */,
+			);
+			name = HouseSwift;
+			productName = HouseSwift;
+			productReference = BEBC6E942927FC85004E25A0 /* HouseSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -91,8 +252,16 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					BEBC6E6C2927FC24004E25A0 = {
+					BEBC6E7B2927FC55004E25A0 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+					BEBC6E872927FC6C004E25A0 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					BEBC6E932927FC85004E25A0 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -109,13 +278,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BEBC6E6C2927FC24004E25A0 /* TestingInteroperability */,
+				BEBC6E7B2927FC55004E25A0 /* DogSwift */,
+				BEBC6E872927FC6C004E25A0 /* CatObjC */,
+				BEBC6E932927FC85004E25A0 /* HouseSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BEBC6E6B2927FC24004E25A0 /* Resources */ = {
+		BEBC6E7A2927FC55004E25A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E862927FC6C004E25A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E922927FC85004E25A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,14 +310,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BEBC6E692927FC24004E25A0 /* Sources */ = {
+		BEBC6E782927FC55004E25A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBC6E9C2927FCCD004E25A0 /* Dog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E842927FC6C004E25A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBC6EBE2927FE11004E25A0 /* Cat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBC6E902927FC85004E25A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBC6ECD292800C2004E25A0 /* House.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEBC6EC52927FF5B004E25A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEBC6E7B2927FC55004E25A0 /* DogSwift */;
+			targetProxy = BEBC6EC42927FF5B004E25A0 /* PBXContainerItemProxy */;
+		};
+		BEBC6ECA2927FF64004E25A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEBC6E872927FC6C004E25A0 /* CatObjC */;
+			targetProxy = BEBC6EC92927FF64004E25A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BEBC6E722927FC24004E25A0 /* Debug */ = {
@@ -255,9 +470,10 @@
 			};
 			name = Release;
 		};
-		BEBC6E752927FC24004E25A0 /* Debug */ = {
+		BEBC6E812927FC56004E25A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -274,16 +490,46 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TestingInteroperability;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.DogSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEBC6E822927FC56004E25A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A82D4LURDA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.DogSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		BEBC6E762927FC24004E25A0 /* Release */ = {
+		BEBC6E8D2927FC6C004E25A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -302,7 +548,92 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TestingInteroperability;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.CatObjC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEBC6E8E2927FC6C004E25A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A82D4LURDA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.CatObjC;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEBC6E992927FC85004E25A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A82D4LURDA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.HouseSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEBC6E9A2927FC85004E25A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = A82D4LURDA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.HouseSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -323,11 +654,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEBC6E742927FC24004E25A0 /* Build configuration list for PBXNativeTarget "TestingInteroperability" */ = {
+		BEBC6E802927FC56004E25A0 /* Build configuration list for PBXNativeTarget "DogSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEBC6E752927FC24004E25A0 /* Debug */,
-				BEBC6E762927FC24004E25A0 /* Release */,
+				BEBC6E812927FC56004E25A0 /* Debug */,
+				BEBC6E822927FC56004E25A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEBC6E8C2927FC6C004E25A0 /* Build configuration list for PBXNativeTarget "CatObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEBC6E8D2927FC6C004E25A0 /* Debug */,
+				BEBC6E8E2927FC6C004E25A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEBC6E982927FC85004E25A0 /* Build configuration list for PBXNativeTarget "HouseSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEBC6E992927FC85004E25A0 /* Debug */,
+				BEBC6E9A2927FC85004E25A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
