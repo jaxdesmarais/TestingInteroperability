@@ -18,18 +18,18 @@ Pod::Spec.new do |spec|
 #  spec.default_subspecs = %w[HouseSwift]
 
   spec.subspec "CatObjC" do |s|
-    s.source_files = "TestingInteroperability/CatObjC/*.{h,m}"
-    s.public_header_files = "TestingInteroperability/CatObjC/*.h"
+    s.source_files = "Sources/CatObjC/**/*.{h,m}"
+    s.public_header_files = "Sources/CatObjC/Public/CatObjC/*.h"
     s.dependency "TestingInteroperability/DogSwift"
   end
 
   spec.subspec "DogSwift" do |s|
-    s.source_files = "TestingInteroperability/DogSwift/*.swift"
+    s.source_files = "Sources/DogSwift/*.swift"
   end
 
   spec.subspec "HouseSwift" do |s|
-    s.source_files = "TestingInteroperability/HouseSwift/*.swift"
-    s.dependency "ImportHell/CatObjC"
+    s.source_files = "Sources/HouseSwift/*.{swift,h}"
+    s.dependency "TestingInteroperability/CatObjC"
   end
 
 end

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BEBC6E8B2927FC6C004E25A0 /* CatObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEBC6E972927FC85004E25A0 /* HouseSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6E962927FC85004E25A0 /* HouseSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBC6E972927FC85004E25A0 /* TestingInteroperability.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6E962927FC85004E25A0 /* TestingInteroperability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBC6E9C2927FCCD004E25A0 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBC6E9B2927FCCD004E25A0 /* Dog.swift */; };
 		BEBC6EBE2927FE11004E25A0 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBC6EBD2927FE11004E25A0 /* Cat.m */; };
 		BEBC6EC02927FF13004E25A0 /* Cat.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6EBF2927FF13004E25A0 /* Cat.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,7 +66,7 @@
 		BEBC6E882927FC6C004E25A0 /* CatObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatObjC.h; sourceTree = "<group>"; };
 		BEBC6E942927FC85004E25A0 /* HouseSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HouseSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEBC6E962927FC85004E25A0 /* HouseSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HouseSwift.h; sourceTree = "<group>"; };
+		BEBC6E962927FC85004E25A0 /* TestingInteroperability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingInteroperability.h; sourceTree = "<group>"; };
 		BEBC6E9B2927FCCD004E25A0 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		BEBC6EBD2927FE11004E25A0 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		BEBC6EBF2927FF13004E25A0 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
@@ -103,9 +103,7 @@
 		BEBC6E632927FC24004E25A0 = {
 			isa = PBXGroup;
 			children = (
-				BEBC6E7D2927FC55004E25A0 /* DogSwift */,
-				BEBC6E892927FC6C004E25A0 /* CatObjC */,
-				BEBC6E952927FC85004E25A0 /* HouseSwift */,
+				BEBC6ED02928128E004E25A0 /* Sources */,
 				BEBC6E6E2927FC24004E25A0 /* Products */,
 				BEBC6EC12927FF5B004E25A0 /* Frameworks */,
 			);
@@ -132,9 +130,8 @@
 		BEBC6E892927FC6C004E25A0 /* CatObjC */ = {
 			isa = PBXGroup;
 			children = (
-				BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */,
 				BEBC6EBD2927FE11004E25A0 /* Cat.m */,
-				BEBC6EBF2927FF13004E25A0 /* Cat.h */,
+				BEBC6ECE29281161004E25A0 /* Public */,
 			);
 			path = CatObjC;
 			sourceTree = "<group>";
@@ -142,7 +139,7 @@
 		BEBC6E952927FC85004E25A0 /* HouseSwift */ = {
 			isa = PBXGroup;
 			children = (
-				BEBC6E962927FC85004E25A0 /* HouseSwift.h */,
+				BEBC6E962927FC85004E25A0 /* TestingInteroperability.h */,
 				BEBC6ECC292800C2004E25A0 /* House.swift */,
 			);
 			path = HouseSwift;
@@ -153,6 +150,33 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEBC6ECE29281161004E25A0 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BEBC6ECF2928116C004E25A0 /* CatObjC */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BEBC6ECF2928116C004E25A0 /* CatObjC */ = {
+			isa = PBXGroup;
+			children = (
+				BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */,
+				BEBC6EBF2927FF13004E25A0 /* Cat.h */,
+			);
+			path = CatObjC;
+			sourceTree = "<group>";
+		};
+		BEBC6ED02928128E004E25A0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BEBC6E892927FC6C004E25A0 /* CatObjC */,
+				BEBC6E7D2927FC55004E25A0 /* DogSwift */,
+				BEBC6E952927FC85004E25A0 /* HouseSwift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +202,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBC6E972927FC85004E25A0 /* HouseSwift.h in Headers */,
+				BEBC6E972927FC85004E25A0 /* TestingInteroperability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
