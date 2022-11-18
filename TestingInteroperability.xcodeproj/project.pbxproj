@@ -17,6 +17,8 @@
 		BEBC6EC72927FF64004E25A0 /* CatObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBC6E882927FC6C004E25A0 /* CatObjC.framework */; };
 		BEBC6EC82927FF64004E25A0 /* CatObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEBC6E882927FC6C004E25A0 /* CatObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BEBC6ECD292800C2004E25A0 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBC6ECC292800C2004E25A0 /* House.swift */; };
+		BEBC6ED3292825D7004E25A0 /* Pugsley.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBC6ED1292825D7004E25A0 /* Pugsley.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBC6ED4292825D7004E25A0 /* Pugsley.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBC6ED2292825D7004E25A0 /* Pugsley.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		BEBC6EBD2927FE11004E25A0 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		BEBC6EBF2927FF13004E25A0 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
 		BEBC6ECC292800C2004E25A0 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		BEBC6ED1292825D7004E25A0 /* Pugsley.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pugsley.h; sourceTree = "<group>"; };
+		BEBC6ED2292825D7004E25A0 /* Pugsley.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pugsley.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBC6EBD2927FE11004E25A0 /* Cat.m */,
+				BEBC6ED2292825D7004E25A0 /* Pugsley.m */,
 				BEBC6ECE29281161004E25A0 /* Public */,
 			);
 			path = CatObjC;
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBC6E8A2927FC6C004E25A0 /* CatObjC.h */,
+				BEBC6ED1292825D7004E25A0 /* Pugsley.h */,
 				BEBC6EBF2927FF13004E25A0 /* Cat.h */,
 			);
 			path = CatObjC;
@@ -194,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEBC6E8B2927FC6C004E25A0 /* CatObjC.h in Headers */,
+				BEBC6ED3292825D7004E25A0 /* Pugsley.h in Headers */,
 				BEBC6EC02927FF13004E25A0 /* Cat.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBC6ED4292825D7004E25A0 /* Pugsley.m in Sources */,
 				BEBC6EBE2927FE11004E25A0 /* Cat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

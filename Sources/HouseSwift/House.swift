@@ -4,7 +4,7 @@ import Foundation
 import CatObjC
 #endif
 
-@objcMembers public class House: Cat {
+@objcMembers public class House: Pugsley {
 
     public func pets() {
         print("There are pets in this house")
