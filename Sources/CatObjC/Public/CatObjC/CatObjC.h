@@ -11,8 +11,8 @@ FOUNDATION_EXPORT const unsigned char CatObjCVersionString[];
 
 #if __has_include(<TestingInteroperability/Cat.h>)
 #import <TestingInteroperability/Cat.h>
-#import <TestingInteroperability/Pugsley.h>
+#import <TestingInteroperability/Tabby.h>
 #else
 #import <CatObjC/Cat.h>
-#import <CatObjC/Pugsley.h>
+#import <CatObjC/Tabby.h>
 #endif
